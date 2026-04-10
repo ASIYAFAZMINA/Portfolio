@@ -33,16 +33,15 @@
             <div class="greeting"><i class="fas fa-waveform"></i> <span id="typed-greeting"></span></div>
             <h1><span id="typed-name"></span></h1>
             <div class="title">Front-End Developer & UI/UX Designer</div>
-            <p id="hero-description">Motivated front-end developer with hands-on experience in creating responsive, user-friendly web interfaces. Skilled in modern web technologies and collaborative workflows.</p>
+            <p id="hero-description"></p>
             <div class="btn-group">
                 <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-outline">Hire Me</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
             </div>
         </div>
         <div class="hero-image">
-            <!-- New hexagon avatar with developer icon -->
-            <div class="hexagon-avatar">
-                <i class="fas fa-laptop-code"></i>
+            <div class="circle-avatar">
+                <span>AF</span>
             </div>
         </div>
     </div>
@@ -99,7 +98,7 @@
     </div>
 </section>
 
-<!-- Projects Section (Only 4 projects) -->
+<!-- Projects Section -->
 <section id="projects">
     <div class="container">
         <h2 class="section-title">Featured Projects</h2>
@@ -107,24 +106,58 @@
     </div>
 </section>
 
-<!-- Contact Section -->
+<!-- Contact Section - With Clickable Hyperlinks -->
 <section id="contact">
-    <div class="container contact-container">
-        <div class="contact-info">
-            <h3>Get in Touch</h3>
-            <div class="contact-item"><i class="fas fa-envelope"></i> asiyafazmina2004@gmail.com</div>
-            <div class="contact-item"><i class="fas fa-phone"></i> +971 56 353 4991</div>
-            <div class="contact-item"><i class="fab fa-linkedin"></i> linkedin.com/in/k-asiya-fazmina</div>
-            <div class="contact-item"><i class="fas fa-map-marker-alt"></i> Dubai, UAE</div>
+    <div class="container">
+        <div class="contact-card">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-items">
+                <!-- Email - Click to open email client -->
+                <a href="mailto:asiyafazmina2004@gmail.com" class="contact-item-large">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>asiyafazmina2004@gmail.com</p>
+                    </div>
+                </a>
+                
+                <!-- Phone - Click to call (mobile) -->
+                <a href="tel:+971563534991" class="contact-item-large">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+971 56 353 4991</p>
+                    </div>
+                </a>
+                
+                <!-- LinkedIn - Opens in new tab -->
+                <a href="https://in.linkedin.com/in/k-asiya-fazmina-296122268" target="_blank" class="contact-item-large">
+                    <i class="fab fa-linkedin"></i>
+                    <div>
+                        <h4>LinkedIn</h4>
+                        <p>linkedin.com/in/k-asiya-fazmina</p>
+                    </div>
+                </a>
+                
+                <!-- GitHub - Opens in new tab -->
+                <a href="https://github.com/dashboard" target="_blank" class="contact-item-large">
+                    <i class="fab fa-github"></i>
+                    <div>
+                        <h4>GitHub</h4>
+                        <p>github.com/dashboard</p>
+                    </div>
+                </a>
+                
+                <!-- Location - Non-clickable (just display) -->
+                <div class="contact-item-large no-hover">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Dubai, UAE</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <form id="contactForm">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <input type="text" id="subject" placeholder="Subject" required>
-            <textarea rows="4" id="message" placeholder="Your Message"></textarea>
-            <button type="submit" id="submitBtn">Send Message <i class="fas fa-paper-plane"></i></button>
-            <div id="formFeedback" class="form-message"></div>
-        </form>
     </div>
 </section>
 
@@ -136,7 +169,6 @@
     <p>© 2025 K. Asiya Fazmina | Crafted with <i class="fas fa-heart" style="color:#667eea;"></i> for creative web experiences</p>
 </footer>
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
