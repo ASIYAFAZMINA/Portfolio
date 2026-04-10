@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>K. Asiya Fazmina | Front-End Developer & UI/UX Designer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <div class="nav-container">
+        <div class="logo">AF</div>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="container hero-content">
+        <div class="hero-text">
+            <div class="greeting"><i class="fas fa-waveform"></i> <span id="typed-greeting"></span></div>
+            <h1><span id="typed-name"></span></h1>
+            <div class="title">Front-End Developer & UI/UX Designer</div>
+            <p id="hero-description">Motivated front-end developer with hands-on experience in creating responsive, user-friendly web interfaces. Skilled in modern web technologies and collaborative workflows.</p>
+            <div class="btn-group">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Hire Me</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <!-- New hexagon avatar with developer icon -->
+            <div class="hexagon-avatar">
+                <i class="fas fa-laptop-code"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience">
+    <div class="container">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="experience-grid">
+            <div class="exp-card">
+                <div class="exp-header">
+                    <div class="exp-title">Junior Front-End Developer & Web Designer</div>
+                    <div class="exp-date">May 2025 – Present</div>
+                </div>
+                <div class="exp-company">Raysoft Infotech Pvt. Ltd.</div>
+                <ul class="exp-desc">
+                    <li>Collaborated with UI/UX and development teams to design and build responsive web interfaces</li>
+                    <li>Worked with HTML, CSS, JavaScript, and VS Code to develop and maintain front-end features</li>
+                    <li>Participated in team discussions, testing, and project reviews for high-quality deliverables</li>
+                    <li>Used Git for version control and team collaboration on shared code repositories</li>
+                </ul>
+            </div>
+            <div class="exp-card">
+                <div class="exp-header">
+                    <div class="exp-title">Front-End Development Intern</div>
+                    <div class="exp-date">Jun 2024 – Jul 2024</div>
+                </div>
+                <div class="exp-company">Edunet Foundation (in collaboration with IBM SkillsBuild)</div>
+                <ul class="exp-desc">
+                    <li>Gained practical knowledge of front-end technologies including HTML, CSS, and JavaScript</li>
+                    <li>Collaborated with team members to understand real-world web development practices and workflows</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
+    <div class="container">
+        <h2 class="section-title">Skills & Tools</h2>
+        <div class="skills-grid">
+            <div class="skill-badge"><i class="fab fa-js"></i> JavaScript</div>
+            <div class="skill-badge"><i class="fab fa-css3-alt"></i> CSS3</div>
+            <div class="skill-badge"><i class="fab fa-html5"></i> HTML5</div>
+            <div class="skill-badge"><i class="fab fa-react"></i> React.js</div>
+            <div class="skill-badge"><i class="fab fa-git-alt"></i> Git/GitHub</div>
+            <div class="skill-badge"><i class="fab fa-figma"></i> Figma</div>
+            <div class="skill-badge"><i class="fas fa-code-branch"></i> Vercel</div>
+            <div class="skill-badge"><i class="fab fa-bootstrap"></i> Bootstrap</div>
+            <div class="skill-badge"><i class="fab fa-tailwind"></i> Tailwind CSS</div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section (Only 4 projects) -->
+<section id="projects">
+    <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid" id="projects-grid"></div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container contact-container">
+        <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <div class="contact-item"><i class="fas fa-envelope"></i> asiyafazmina2004@gmail.com</div>
+            <div class="contact-item"><i class="fas fa-phone"></i> +971 56 353 4991</div>
+            <div class="contact-item"><i class="fab fa-linkedin"></i> linkedin.com/in/k-asiya-fazmina</div>
+            <div class="contact-item"><i class="fas fa-map-marker-alt"></i> Dubai, UAE</div>
+        </div>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <input type="text" id="subject" placeholder="Subject" required>
+            <textarea rows="4" id="message" placeholder="Your Message"></textarea>
+            <button type="submit" id="submitBtn">Send Message <i class="fas fa-paper-plane"></i></button>
+            <div id="formFeedback" class="form-message"></div>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="social-links">
+        <a href="https://github.com/dashboard" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://in.linkedin.com/in/k-asiya-fazmina-296122268" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <p>© 2025 K. Asiya Fazmina | Crafted with <i class="fas fa-heart" style="color:#667eea;"></i> for creative web experiences</p>
+</footer>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
