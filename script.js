@@ -8,7 +8,7 @@ function startTypingAnimation() {
 
     const greetingText = "Hello, I'm";
     const nameText = "K. Asiya Fazmina";
-    const descriptionText = "Enthusiastic Front-End Developer and aspiring UI/UX Designer with hands-on experience building responsive websites. Proficient in modern coding workflows and design tools. Eager to contribute to user-centered projects while growing technical and collaboration skills in a dynamic team setting.";
+    const descriptionText = "Enthusiastic professional with hands-on experience building responsive websites. Proficient in modern coding workflows and design tools. Eager to contribute to user-centered projects while growing technical and collaboration skills in a dynamic team setting. I turn ideas into interfaces that users love. Clean code, thoughtful design, real results.";
 
     let greetingIndex = 0, nameIndex = 0, descIndex = 0;
     let nameStarted = false;
